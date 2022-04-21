@@ -1,2 +1,0 @@
-# garron-blog
-garron-blog
