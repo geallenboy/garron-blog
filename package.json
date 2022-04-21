@@ -3,12 +3,12 @@
   "name": "garron-blog",
   "version": "1.0.0",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "build": "father-build"
+    "docs:dev": "vuepress dev docs --clean-cache",
+    "docs:build": "vuepress build docs --clean-cache"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/dumi-template",
+    "url": "https://github.com/geallenboy/garron-blog",
     "branch": "main"
   },
   "devDependencies": {

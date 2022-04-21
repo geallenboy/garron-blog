@@ -6,9 +6,7 @@ actions:
   - text: 关于我
     link: /guide/about
     type: primary
-  - text: 项目简介
-    link: /guide/introduce
-    type: secondary
+
 features:
   - title: web
     details: 整理总结前端技术
