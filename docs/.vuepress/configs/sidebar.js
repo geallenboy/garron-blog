@@ -19,5 +19,13 @@ module.exports = {
       ],
     },
   ],
-  
+  '/read/': [
+    {
+      text: '工作',
+      children: [
+        '/read/work/gttw.md',
+        
+      ]
+    }
+  ],
 }
