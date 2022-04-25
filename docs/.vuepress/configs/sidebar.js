@@ -12,10 +12,9 @@ module.exports = {
       ],
     },
     {
-      text: '框架',
+      text: 'react',
       children: [
         '/web/frame/react.md',
-        '/web/frame/vue.md'
       ],
     },
   ],

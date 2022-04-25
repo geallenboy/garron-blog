@@ -6,22 +6,12 @@ module.exports = [
     link: '/',
   },
   {
-    text: 'web',
+    text: '前端',
     link: '/web/',
     
   },
   {
-    text: '元宇宙',
-    link: '/meta/'
-  },
-  {
     text: '阅读',
     link: '/read/'
-    
-  },
-  {
-    text: '思考',
-    link: '/think/'
-    
-  },
+  }
 ]
