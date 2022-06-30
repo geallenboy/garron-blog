@@ -7,7 +7,7 @@ const sidebar = require('./configs/sidebar')
 module.exports  = {
   base: '/',
   description:'让每一次的尝试和付出都有价值',
-  title:'小桥号',
+  title:'嘉伦',
   head: [
     [
       'link',
