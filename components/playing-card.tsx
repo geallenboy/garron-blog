@@ -1,13 +1,4 @@
 import Card from "./card";
-import Image from "next/image";
-import { CameraIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
-import {
-  Javascript,
-  ReactJs,
-  Nodedotjs,
-  Flutter,
-  Typescript,
-} from "@icons-pack/react-simple-icons";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import classNames from "classnames";
 import { useState } from "react";
@@ -15,29 +6,33 @@ import { useState } from "react";
 const items = [
   {
     name: "typescript",
-    icon: <Typescript className="h-6 w-6" />,
-    summary:
-      "TypeScript, 最常使用的编程语言, 常搭配使用的有 Node / React / Tailwind 。",
+    icon: "",
+    summary: "TypeScript, 最常使用的编程语言",
   },
   {
-    name: "Javascript",
-    icon: <Javascript className="h-6 w-6" />,
-    summary: "Javascript 。",
-  },
-  {
-    name: "Nodedotjs",
-    icon: <Nodedotjs className="h-6 w-6" />,
-    summary: "Nodedotjs, 偶尔也弄弄设计, 但不太熟。",
+    name: "node",
+    icon: "",
+    summary: "node",
   },
   {
     name: "flutter",
-    icon: <Flutter className="h-7 w-7" />,
-    summary: "Flutter, 尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。",
+    icon: "",
+    summary: "Flutter",
   },
   {
-    name: "reactJs",
-    icon: <ReactJs className="h-7 w-7" />,
-    summary: "ReactJs, 尝试学习过很多次, 每次都是照着教程弄一遍就放弃了。",
+    name: "react",
+    icon: "",
+    summary: "react",
+  },
+  {
+    name: "vue",
+    icon: "",
+    summary: "vue",
+  },
+  {
+    name: "css",
+    icon: "",
+    summary: "css",
   },
 ];
 
@@ -54,11 +49,11 @@ export default function PlayingCard({ className }: { className?: string }) {
       )}
     >
       <h1 className="mb-2 text-red-500/60">在玩什么</h1>
-      <div className="flex items-center space-x-4 px-4">
+      <div className="flex flex-wrap items-center space-x-4 px-4">
         <AnimateSharedLayout>
           {items.map((item) => {
             const selected = selectedItem?.name === item.name;
-
+            console.log(selectedItem?.name, item.name, selected, 9999);
             return (
               <div
                 key={item.name}
@@ -71,6 +66,7 @@ export default function PlayingCard({ className }: { className?: string }) {
                   }
                 )}
                 onClick={() => {
+                  console.log(item, 99);
                   setSelectedItem(selected ? undefined : item);
                 }}
               >
@@ -83,7 +79,7 @@ export default function PlayingCard({ className }: { className?: string }) {
                     layoutId="selected-background"
                   />
                 ) : undefined}
-                {item.icon}
+                {item.name}
               </div>
             );
           })}
@@ -91,7 +87,7 @@ export default function PlayingCard({ className }: { className?: string }) {
       </div>
       <div className="mt-3 overflow-hidden rounded-xl border border-gray-400/20 bg-white/40 p-4 dark:border-white/30 dark:bg-black/30 sm:h-24">
         <p className="opacity-70 transition-all">
-          {selectedItem?.summary ?? <>我来人间一趟, 我要看看太阳。</>}
+          {selectedItem?.summary ?? <>徜徉人世间，追逐太阳光。</>}
         </p>
       </div>
     </Card>

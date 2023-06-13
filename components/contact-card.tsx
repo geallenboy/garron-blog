@@ -9,7 +9,7 @@ export default function ContactCard({ className }: { className?: string }) {
   return (
     <Card
       className={classNames(
-        "flex flex-col justify-between bg-blue-100/20 px-4 ",
+        "flex flex-col justify-between bg-blue-100/20 px-4",
         className
       )}
     >

@@ -1,10 +1,6 @@
 import Card from "./card";
 import Image from "next/image";
-import {
-  ArrowPathRoundedSquareIcon,
-  EnvelopeIcon,
-} from "@heroicons/react/24/solid";
-import { Github, Instagram, Twitter } from "@icons-pack/react-simple-icons";
+import { ArrowPathRoundedSquareIcon } from "@heroicons/react/24/solid";
 import avatar from "../public/avatar.png";
 import twitterVerified from "../public/twitter-verified.svg";
 import BackgroundGradient from "./background-gradient";
@@ -32,10 +28,10 @@ export default function ProfileCard({ className }: { className?: string }) {
               src={twitterVerified.src}
               height={100}
               width={100}
-              alt="Twitter Verified"
+              alt="garron"
             />
           </p>
-          <p className="mt-2 opacity-60">梦想励志，奋斗人生</p>
+          <p className="mt-2 opacity-60">追求梦想，奋斗人生</p>
 
           <button
             className="absolute right-5 bottom-5 rounded-full border border-gray-400/20 bg-white/40 p-3 dark:border-white/30 dark:bg-black/40"

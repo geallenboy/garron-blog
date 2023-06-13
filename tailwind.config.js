@@ -2,11 +2,11 @@
 
 const brandColors = {
   typescript: "#3178C6",
-  swift: "#F05138",
-  sketch: "#F7B500",
-  blender: "#F5792A",
-  switch: "#E60012",
-  netflix: "#E50914",
+  node: "#F05138",
+  flutter: "#F7B500",
+  react: "#F5792A",
+  vue: "#E60012",
+  css: "#E50914",
   photography: "#0ea5e9",
   twitter: "#1DA1F2",
   github: "#a855f7",

@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className="flex grow flex-col justify-center">
         <section>
-          <div className="w-full px-4 py-16 sm:px-6 lg:px-8">
+          <div className="w-full px-4 py-6 sm:px-6 sm:py-16 lg:px-8">
             <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-12">
               <ProfileCard className="sm:col-span-6 sm:row-span-2 lg:col-span-5" />
               <ContactCard className="sm:col-span-6 lg:col-span-3" />
