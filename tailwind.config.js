@@ -1,13 +1,13 @@
-/** @type {import('tailwindcss').Config} */
+
 
 const brandColors = {
-  typescript: "#3178C6",
+  react: "#F5792A",
+  "ts/js": "#3178C6",
   node: "#F05138",
   flutter: "#F7B500",
-  react: "#F5792A",
   vue: "#E60012",
-  css: "#E50914",
-  photography: "#0ea5e9",
+  css3: "#E50914",
+  tailwindcss: "#0ea5e9",
   twitter: "#1DA1F2",
   github: "#a855f7",
   instagram: "#E4405F",

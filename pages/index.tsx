@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import BackgroundGradient from "../components/background-gradient";
 import BlogCard from "../components/blog-card";
-import Card from "../components/card";
 import ContactCard from "../components/contact-card";
 import DoingCard from "../components/doing-card";
-import LinkCard from "../components/link-card";
 import PlayingCard from "../components/playing-card";
 import ProfileCard from "../components/profile-card";
 
@@ -13,9 +9,9 @@ export default function Home() {
   return (
     <div className="relative isolate flex min-h-screen flex-col overflow-hidden bg-gray-100 text-black dark:bg-neutral-900 dark:text-gray-100">
       <Head>
-        <title>garron&apos; World</title>
+        <title>garron</title>
         <meta name="description" content="garron Home" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
         <meta name="keywords" content="garron,Homepage" />
       </Head>
 

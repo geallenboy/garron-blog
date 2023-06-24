@@ -1,8 +1,5 @@
 import Card from "./card";
-import Image from "next/image";
-import { ArrowPathRoundedSquareIcon } from "@heroicons/react/24/solid";
-import avatar from "../public/avatar.png";
-import twitterVerified from "../public/twitter-verified.svg";
+import SvgIcon from "./svgs/icon";
 import BackgroundGradient from "./background-gradient";
 import FlippableCard from "./flippable-card";
 import { useCallback, useState } from "react";
@@ -20,24 +17,15 @@ export default function ProfileCard({ className }: { className?: string }) {
       className={classNames("relative", className)}
       front={
         <Card className="flex h-full flex-col items-center justify-center bg-indigo-200/10 py-40 sm:py-20">
-          <Image className="h-16 w-16 rounded-full" src={avatar} alt="Avatar" />
-          <p className="relative mt-2 items-end text-xl">
-            garron
-            <Image
-              className="absolute top-0 bottom-0 -right-6 my-auto h-5 w-5"
-              src={twitterVerified.src}
-              height={100}
-              width={100}
-              alt="garron"
-            />
-          </p>
+          <SvgIcon />
+          <p className="relative mt-2 items-end text-xl">garron</p>
           <p className="mt-2 opacity-60">追求梦想，奋斗人生</p>
 
           <button
             className="absolute right-5 bottom-5 rounded-full border border-gray-400/20 bg-white/40 p-3 dark:border-white/30 dark:bg-black/40"
             onClick={() => toggle()}
           >
-            <ArrowPathRoundedSquareIcon className="h-5 w-5 opacity-60" />
+            <span className="h-5 w-5 opacity-60">旋转</span>
           </button>
         </Card>
       }
@@ -65,7 +53,7 @@ export default function ProfileCard({ className }: { className?: string }) {
             className="absolute right-5 bottom-5 rounded-full border border-gray-400/20 bg-white/30 p-3 dark:border-white/30 dark:bg-black/40"
             onClick={() => toggle()}
           >
-            <ArrowPathRoundedSquareIcon className="h-5 w-5 opacity-60" />
+            <span className="h-5 w-5 opacity-60">旋转</span>
           </button>
         </Card>
       }

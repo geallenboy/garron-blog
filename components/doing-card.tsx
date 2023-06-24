@@ -1,32 +1,23 @@
 import Card from "./card";
-import Image from "next/image";
-import AssisChat from "../public/assischat.png";
-import lofyee from "../public/lofyee.png";
 import { useState } from "react";
 import classNames from "classnames";
+import SvgAIGC from "./svgs/aigc";
+import SvgAIGf from "./svgs/aigf";
 
 const items = [
   {
     name: "aiGift",
-    icon: (
-      <Image
-        className="h-11 w-11 rounded-lg"
-        src={AssisChat}
-        alt="AssisChat App"
-      />
-    ),
+    icon: <SvgAIGf />,
     url: "#",
     title: "aiGift",
     summary: <>aiGift：一款人工智能的礼物。</>,
   },
   {
     name: "caigc",
-    icon: (
-      <Image className="h-11 w-11 rounded-lg" src={lofyee} alt="Kosto App" />
-    ),
+    icon: <SvgAIGC />,
     url: "#",
     title: "caigc",
-    summary: <>caigc：一个人工智能网站。</>,
+    summary: <>caigc：一款人工智能网站。</>,
   },
 ];
 

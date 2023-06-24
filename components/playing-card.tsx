@@ -5,34 +5,28 @@ import { useState } from "react";
 
 const items = [
   {
-    name: "typescript",
-    icon: "",
-    summary: "TypeScript, 最常使用的编程语言",
-  },
-  {
-    name: "node",
-    icon: "",
-    summary: "node",
-  },
-  {
-    name: "flutter",
-    icon: "",
-    summary: "Flutter",
-  },
-  {
     name: "react",
-    icon: "",
-    summary: "react",
+    summary: "构建高效、灵活且可组合的用户界面。",
   },
   {
     name: "vue",
-    icon: "",
-    summary: "vue",
+    summary: "快速开发响应式的现代Web应用程序。",
   },
   {
-    name: "css",
-    icon: "",
-    summary: "css",
+    name: "ts/js",
+    summary: "世界上用的最多，最广的语言。",
+  },
+  {
+    name: "node",
+    summary: "高效构建可伸缩的服务器端和网络应用程序。",
+  },
+  {
+    name: "flutter",
+    summary: "高效地构建跨平台的美观流畅的移动应用程序。",
+  },
+  {
+    name: "css3",
+    summary: "样式化和美化网页内容及布局。",
   },
 ];
 
@@ -53,7 +47,6 @@ export default function PlayingCard({ className }: { className?: string }) {
         <AnimateSharedLayout>
           {items.map((item) => {
             const selected = selectedItem?.name === item.name;
-            console.log(selectedItem?.name, item.name, selected, 9999);
             return (
               <div
                 key={item.name}
@@ -66,7 +59,6 @@ export default function PlayingCard({ className }: { className?: string }) {
                   }
                 )}
                 onClick={() => {
-                  console.log(item, 99);
                   setSelectedItem(selected ? undefined : item);
                 }}
               >
